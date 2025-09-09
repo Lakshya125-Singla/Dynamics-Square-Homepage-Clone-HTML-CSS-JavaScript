@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Dynamics 365 Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+            background: #1A2C79;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar {
+            color: #484848;
+            text-align: right;
+            background-color: #fff;
+            padding: 20px 20px;
+            font-size: 16px;
+        }
+
+        .top-bar span {
+            margin-left: 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #e80566;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .contact-button {
+            background-image: none;
+            background-color: #fff;
+            color: #e80566;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            color: #fff;
+            background-color: #e80566;
+
+            /* border-radius: 10px;
+            cursor: pointer; */
+        }
+
+        .hero-main {
+            text-align: center;
+            padding: 50px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/000/642/663/small/V1902-140.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero-main h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .subheading {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #484848;
+        }
+
+
+
+        .hero1 {
+            text-align: center;
+            padding: 50px;
+            background-color: rgb(26, 44, 121);
+        }
+
+        .hero-image {
+            width: 800%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .cta-button9 {
+            color: #fff;
+            background-color: rgb(232, 5, 102);
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cta-button9:hover {
+            color: black;
+            background-color: #fff;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #d7efff;
+            padding: 15px;
+            gap: 20px;
+            border-radius: 20px;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #1a2c79;
+            font-weight: bold;
+            /* padding: 15px; */
+            /* gap: 0px; */
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            color: #1a2c79;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #484848;
+            text-align: left;
+            text-indent: 50px;
+        }
+
+        .infographic {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .infographic img {
+            width: 60%;
+            max-width: 500px;
+            display: block;
+            margin: auto;
+        }
+
+        .cta-section {
+            background-color: #1a2c79;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .cta-section p {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            padding: 10px;
+        }
+
+        .cta-banner {
+            background-color: #1a2c79;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .cta-banner p {
+            font-size: 40px;
+            color: #ea1212;
+        }
+
+        .cta-button1 {
+            background-color: #e80566;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cta-button1:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .benefits {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .benefits h2 {
+            color: #1a2c79;
+            /* text-align: left; */
+            font-size: 26px;
+        }
+
+        .benefits p {
+            color: #484848;
+            margin-bottom: 30px;
+            /* text-align: left; */
+            font-size: 16px;
+
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+            gap: 20px;
+            /* max-width: 1000px; */
+            margin: auto;
+        }
+
+        .benefit-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-item h3 {
+            color: #1a2c79;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .benefit-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefit-item ul li {
+            background: url('https://img.icons8.com/ios-filled/15/007bff/checkmark.png') no-repeat left center;
+            padding-left: 25px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #484848;
+        }
+
+        .benefit-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+
+        .capabilities {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .capabilities h2 {
+            color: #1a2c79;
+        }
+
+        .capabilities p {
+            color: #484848;
+            margin-bottom: 30px;
+        }
+
+        .capabilities-container {
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .capability-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 25%;
+        }
+
+        .capability-categories button {
+            background: #1a2c79;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .capability-categories button.active {
+            background: #ddd;
+            color: black;
+        }
+
+        .capability-categories button:hover {
+            background: #e80566;
+            color: white;
+        }
+
+        .capability-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding-left: 20px;
+            width: 75%;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #1a2c79;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #484848;
+        }
+
+        .cta-button {
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 30px;
+        }
+
+
+        .find-out-more {
+            background: #e80566;
+
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .find-out-more:hover {
+            background: #1a2c79;
+        }
+
+        .bottom-banner {
+            background: #1a2c79;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+
+        .bottom-banner h2 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .bottom-banner p {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .cta-button2 {
+            text-align: center;
+            background-color: #1a2c79;
+            margin-top: 30px;
+        }
+
+        .Switch-Now {
+            background: #e80566;
+
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .Switch-Now:hover {
+            background: #fff;
+            color: black;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .feature h3 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .business-services {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .business-services h2 {
+            color: #333;
+            background-color: #fff;
+
+        }
+
+        .business-services p {
+            color: #484848;
+            background-color: #fff;
+
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            background-color: #fff;
+
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            background-color: #fff;
+
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #fff;
+
+        }
+
+        .service-card h3 {
+            color: #333;
+            background-color: #fff;
+
+        }
+
+        .service-card p {
+            color: #484848;
+            background-color: #fff;
+
+        }
+
+        .service-card a {
+            color: #e80566;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #fff;
+
+        }
+
+        .colour-chain {
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+
+        }
+
+        .header2 {
+            background: #fff;
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blue-box {
+            background-color: #1a2c79;
+            color: white;
+            position: relative;
+        }
+
+        .link1 {
+            color: #fff;
+        }
+
+        .blue-box::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background: url('path-to-your-graphic.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .gray-box {
+            background-color: #f8f8f8;
+            color: #484848;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .link {
+            color: #e80566;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .migration-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card-text {
+            width: 40%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .light-blue {
+            background-color: #cbd3f7;
+        }
+
+        .white {
+            background-color: #ffffff;
+        }
+
+        .red-button {
+            background-color: #e80566;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .container5 {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .pricing-header {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .pricing-subtext {
+            font-size: 16px;
+            color: #484848;
+            margin-bottom: 30px;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card5 {
+            background: white;
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card5-header {
+            background: #1a2c79;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e80566;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .features5 {
+            list-style: none;
+            text-indent: 80px;
+            text-align: left;
+            padding: 0;
+            color: #333;
+        }
+
+        .features5 li {
+            padding: 5px 0;
+            /* word-spacing: 10px; */
+        }
+
+        .red-button2 {
+            background-color: #e80566;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .red-button2:hover {
+            background-color: #1a2c79;
+        }
+
+        .container7 {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .faq-header {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .faq-subheader {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .faq {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin: 10px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-content {
+            display: none;
+            padding: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 50px;
+            background: #082f7c;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #082f7c;
+            color: white;
+            padding: 30px 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-info img {
+            height: 50px;
+            width: 300px;
+            margin-bottom: 10px;
+
+        }
+
+
+        .social-icons i {
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .footer-services,
+        .footer-links,
+        .footer-contact {
+            line-height: 2;
+            max-width: 300px;
+        }
+
+        .footer-services h3 {
+            text-indent: 50px;
+            font-size: 22px;
+
+        }
+
+        .footer-links h3 {
+            text-indent: 50px;
+            font-size: 22px;
+
+        }
+
+        .footer-contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-contact input,
+        .footer-contact textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .footer-contact button {
+            background: #ff2e63;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-bottom a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+
+        /* .consultation {
+            padding: 50px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            width: 50%;
+            border-radius: 10px;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .phone-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px;
+            background: #d80000;
+            color:#fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .faq-header3 {
+            font-size: 28px;
+            font-weight: bold;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .faq-subheader3 {
+            font-size: 18px;
+            color: #555;
+            /* width: 80%; */
+        /* margin: auto;
+            text-align: center;
+            /* padding: 50px 0; */
+        /* } */
+        .faq-header3 {
+            font-size: 36px;
+            color: #333;
+            font-weight: bold;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            /* padding: 20px 0; */
+        }
+
+        .faq-subheader3 {
+            font-size: 16px;
+            color: #484848;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .footer {
+            background: #001F3F;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .footer h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-container a:hover {
+            color: #e80566;
+        }
+    </style>
+    <script defer src="script.js"></script>
+    <!-- STYLE END -->
+</head>
+
+<body>
+    <!-- Forn Button -->
+    <div id="formContainer" class="hidden">
+        <div class="form-box">
+            <h2>Request Callback</h2>
+            <h3>Please complete the form <br>given below</h3>
+            <form>
+                <input type="text" placeholder="Name *" required>
+                <input type="email" placeholder="Email *" required>
+                <input type="tel" placeholder="Phone *" required>
+                <textarea placeholder="How Can We Help You?" required></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="button" id="closeFormBtn">Close</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="top-bar">
+        <span>📧 infodynamicssquares.com</span>
+        <span>📞 +91-5859595685</span>
+        <span>💬 15ABjmv4496SSun541</span>
+    </div>
+    <header>
+
+        <div class="logo">DYNAMICS <span class="highlight">SQUARE</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="contact-button" onclick="alert('Call has been done.')"><span>+1 289 807 0740</span></div>
+    </header>
+
+    <!-- HEADER ENDS  -->
+    <main>
+        <section class="hero-main">
+            <h1>Microsoft Dynamics 365 Business Central Partner</h1>
+            <p class="subheading">Power your SME with an all-in-one ERP Solution</p>
+            <p class="description">Accelerate growth, break data silos, centralize data, connect teams, and access your
+                system from <br>anywhere and anytime.</p>
+
+        </section>
+    </main>
+
+    <section class="hero1">
+        <img src="https://i.ytimg.com/vi/lRr9TGZekco/maxresdefault.jpg" alt="Business Central Demo" class="hero-image">
+        <br><br><button class="cta-button9" id="openFormBtn">Let's Get Started!</button>
+
+        <h1>All-in-one solution for all your business practices</h1>
+
+    </section>
+    <section class="tabs">
+        <a href="#">Overview</a>
+        <a href="#">Benefits</a>
+        <a href="#">Capabilities</a>
+        <a href="#">Services</a>
+        <a href="#">Why us</a>
+        <a href="#">Pricing and Licensing</a>
+    </section>
+    <section class="content">
+        <h2>Dynamics 365 Business Central –<br> Your Partner in Growth</h2>
+
+
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjezVH8Q424kNT4gwW0OxWFqBgD6QmWDkYXg&s"
+            alt="Business Central Infographic" style="float:left;width:450px;height:400px;">
+        <article>
+            <br><br>
+            <p>Dynamics 365 Business Central, formerly known as <span class="highlight">Dynamics NAV</span>, is a
+                comprehensive cloud ERP solution embedded with modern technologies of AI and BI to streamline the
+                diverse processes of SMBs.</p>
+            <br>
+            <p> Microsoft Business Central is a powerful solution that comes with advanced capabilities and
+                business-centric functionalities to deal with different complexities. It connects, manages, and
+                streamlines different departments that include <b>finance, sales, supply chain operations, and HR.</b>
+            </p>
+            <br>
+            <p> D365 BC leverages the power of AI enabled Copilot assistance to enhance productivity, get real-time
+                insights to make data-driven decisions, and simplify processes to enhance overall efficiency with
+                improved visibility.</p>
+        </article>
+        </p>
+    </section>
+    </main><br><br>
+    <section class="cta-section">
+        <h2>Want to eliminate data silos and boost business productivity?</h2>
+
+        <p>Accept innovation and embrace cloud computing with a cost-effective Business Central implementation. Break
+            silos and boost profit margins with a FREE Business Central trial.</p>
+        <!-- <div>formbutton6969</div> -->
+
+
+        <button class="cta-button9" id="openFormBtn">Unlock Growth. Start Your Trial Today</button>
+        <div id="formContainer" class="hidden">
+            <div class="form-box">
+                <h2>Request Callback</h2>
+                <h3>Please complete the form <br>given below</h3>
+                <form>
+                    <input type="text" placeholder="Name *" required>
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Phone *" required>
+                    <textarea placeholder="How Can We Help You?" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" id="closeFormBtn">Close</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Dynamics 365 Business Central: Core Benefits You Must Know</h2>
+        <p>Get holistic visibility, real-time insights, and an impactful customer experience to achieve business goals
+            with Microsoft Dynamics 365 BC.</p>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/cloud_download.png" alt="Cloud Deployment">
+                <h3> Deploy the Cloud Faster, Reduce Downtime</h3>
+                <ul>
+                    <li>Accelerated Deployment</li>
+                    <li>Enhanced Accessibility</li>
+                    <li>Increased Uptime</li>
+                    <li>Easy to Scale</li>
+                </ul>
+            </div>
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/pages.png" alt="Customer Loyalty">
+                <h3>Amaze Customers and Drive Loyalty</h3>
+                <ul>
+                    <li>Improved Customer Experience</li>
+                    <li>Personalized Interactions</li>
+                    <li>Efficient Order Management</li>
+                    <li>Effective CRM Features</li>
+                </ul>
+            </div>
+
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/sleep_score.png" alt="AI Deals">
+                <h3>Close More Deals with AI</h3>
+                <ul>
+                    <li>Intelligent Sales Insights</li>
+                    <li>Avail Automation</li>
+                    <li>Predictive Sales Forecasting</li>
+                    <li>Personalized Sales Pitch</li>
+                </ul>
+            </div>
+
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/rocket_launch_icon.png" alt="Data Analytics">
+                <h3>Skyrocket Performance with Data Analytics</h3>
+                <ul>
+                    <li>Data-Driven Decision Making</li>
+                    <li>Improved Efficiency</li>
+                    <li>Enhanced Forecasting</li>
+                    <li>Real-time Performance Monitoring</li>
+                </ul>
+            </div>
+
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/memory.png" alt="Deliver Budget">
+                <h3> Deliver Projects on Time, On Budget</h3>
+                <ul>
+                    <li>Improved Project Planning</li>
+                    <li>Enhanced Collaboration</li>
+                    <li>Real-time Project Tracking</li>
+                    <li>Resource Optimization</li>
+                </ul>
+            </div>
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/pie_chart.png" alt="Gain Money">
+                <h3> Real-Time Financials: Gain Control, Make Money</h3>
+                <ul>
+                    <li>Accurate Financial Data</li>
+                    <li>Improved Cash Flow Management</li>
+                    <li>Enhanced Financial Reporting</li>
+                    <li>Follow Regulatory Compliance</li>
+                </ul>
+            </div>
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/work_update.png" alt="Inventory Boost">
+                <h3> Cut Inventory Costs and Boost Availability</h3>
+                <ul>
+                    <li>Optimized Inventory Levels</li>
+                    <li>Improved Demand Forecasting</li>
+                    <li>Efficient Warehouse Management</li>
+                    <li>Reduced Inventory Shrinkage</li>
+                </ul>
+            </div>
+            <div class="benefit-item">
+                <img src="https://www.dynamicssquare.ca/img/inventory_2.png" alt="Chain Management">
+                <h3> In-built Intelligent Supply Chain Management</h3>
+                <ul>
+                    <li>360-Degree SCM Visibility</li>
+                    <li>Improved Team Collaboration</li>
+                    <li>Risk Management</li>
+                    <li>Maximized Performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="capabilities">
+            <h2>The Powerhouse Within: Exploring Business Central Capabilities</h2>
+            <p>Connect your entire business processes, make smarter decisions, and start growing easily with
+                game-changing Business Central capabilities.</p>
+
+            <div class="capabilities-container">
+                <div class="capability-categories">
+                    <button class="active">Finance</button>
+                    <button id="replaceButton">Sales</button>
+                    <button id="replaceButton">Supply Chain Management</button>
+                    <button id="replaceButton">Project Management</button>
+                    <button id="replaceButton">Inventory Management</button>
+                    <button id="replaceButton">Warehouse Management</button>
+                </div>
+
+
+                <div class="capability-cards" id="content">
+                    <div class="card">
+                        <h3>Internal Transactions</h3>
+                        <p>Manages internal financial transactions without any errors.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Forecast Cash Flows</h3>
+                        <p>Estimates future cash inflows, outflows, and financial position.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Budgeting</h3>
+                        <p>Plans and tracks financial resources to control expenses.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Inventory Costing</h3>
+                        <p>Track inventory value to forecast expenses and maintain inventory levels.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Multi-Companies Management</h3>
+                        <p>Combines financial data from multiple entities to analyze finance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Costs and Expense Allocation</h3>
+                        <p>Allocate expenses and revenues accurately using a common journal.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Treasury</h3>
+                        <p>Manage cash instruments, offering visibility and control over finance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Accounts Receivable</h3>
+                        <p>Tracks and manages incoming payments and settles customer accounts.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Accounts Payable</h3>
+                        <p>Tracks and manages outgoing payments to suppliers and vendor partners.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Fixed Assets</h3>
+                        <p>Manage and track long-term assets, including maintenance costs and insurance policies.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <!-- <div class="sales">
+                    <div class="capability-cards" id="content">
+                        <div class="card">
+                            <h3>Client management</h3>
+                            <p>Manage your customer base, resolve queries, and increase customer satisfaction.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sales Quote</h3>
+                            <p>Modify and send sales quotes to provide customers with detailed pricing.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sales Order</h3>
+                            <p>Create sales orders and manage the sale of products or services to customers.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sales Invoices</h3>
+                            <p>Generate invoices for products or services customers have purchased.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Drop Shipments</h3>
+                            <p>Fulfill customer orders by shipping products directly using a purchase order.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Sales Returns</h3>
+                            <p>Process and manage returned items and ensure accurate inventory.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>Assembly Order</h3>
+                            <p>Connect sales requirements with warehouse activities to fulfill orders.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Order Planning & Promising</h3>
+                            <p>Plan and promise delivery dates to ensure smooth order fulfillment.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Generate Single Invoice</h3>
+                            <p>Create a single invoice for multiple shipments with detailed information.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Correction or Cancel Unpaid Invoices</h3>
+                            <p>Correct or cancel unpaid invoices to manage billing errors or customers.</p>
+                        </div>
+                    </div> -->
+            <!-- end of second -->
+            </div>
+
+        </section>
+
+        <div class="cta-button">
+            <button class="find-out-more" id="openFormBtn">Find Out More</button>
+            <div id="formContainer" class="hidden">
+                <div class="form-box">
+                    <h2>Request Callback</h2>
+                    <h3>Please complete the form <br>given below</h3>
+                    <form>
+                        <input type="text" placeholder="Name *" required>
+                        <input type="email" placeholder="Email *" required>
+                        <input type="tel" placeholder="Phone *" required>
+                        <textarea placeholder="How Can We Help You?" required></textarea>
+
+                        <button type="submit">Submit</button>
+                        <button type="button" id="closeFormBtn">Close</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="bottom-banner">
+            <h2>Switch to Microsoft Business Central Today!
+                Your Gateway to Immeasurable Success.</h2>
+            <p>Simplify, automate, and succeed by leveraging the limitless capabilities of Business Central.</p>
+            <div class="cta-button2">
+                <button class="Switch-Now" id="openFormBtn">Switch Now! </button>
+                <div id="formContainer" class="hidden">
+                    <div class="form-box">
+                        <h2>Request Callback</h2>
+                        <h3>Please complete the form <br>given below</h3>
+                        <form>
+                            <input type="text" placeholder="Name *" required>
+                            <input type="email" placeholder="Email *" required>
+                            <input type="tel" placeholder="Phone *" required>
+                            <textarea placeholder="How Can We Help You?" required></textarea>
+
+                            <button type="submit">Submit</button>
+                            <button type="button" id="closeFormBtn">Close</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>What Makes Business Central ERP Stand Out?</h2>
+        <p>The modern features, unlimited AI capabilities, pure cloud-based deployment, and cost-effective per-user
+            subscription licensing make this solution unique and powerful for SMBs.</p>
+        <section class="features">
+            <div class="feature">
+                <h3>AI Powered Assistance</h3>
+                <p>Business Central comes embedded with Microsoft Copilot to help you eliminate recurring or manual
+                    tasks and avail automation.</p>
+            </div>
+            <div class="feature">
+                <h3>Unified and Modern Approach</h3>
+                <p>Business Central ERP offers centralized data to offer data accessibility 24*7 with an attractive
+                    user-interface and easy navigation.</p>
+            </div>
+            <div class="feature">
+                <h3>Integration Capabilities</h3>
+                <p>Utilize one-click Business Central Extension technology to integrate solutions of Microsoft Dynamics
+                    365 ecosystem without any hassle.</p>
+            </div>
+            <div class="feature">
+                <h3>Cloud-enabled technology</h3>
+                <p>Cloud technology is cost-effective, low in maintenance, and enables businesses to automatically
+                    receive updates for free.</p>
+            </div>
+        </section>
+        <header2>
+            <section class="business-services">
+                <h2>Microsoft 365 Business Central Services</h2>
+                <p>Explore our efficient, reliable, and cost-efficient services, specially curated for growing
+                    businesses.</p>
+            </section>
+
+            <section class="service-cards">
+                <div class="service-card">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Business Implementation" width=300px height=250px>
+                    <h3>Business Centroal Implementation</h3>
+                    <p>Streamline and boost your business with a seamless implementation process.</p>
+                    <a href="#">Unlock Growth! →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Hh94SiaekaVjYamjo4--ivUxNVa8ys3s2w&s"
+                        alt="Migrate to Business Central" width=300px height=250px>
+                    <br>
+                    <h3>Migrate to Business Central <b class="colour-chain">bsfgwugfub</b></h3>
+                    <p>Transform your business digitally by utilizing advanced tools to push growth.</p>
+                    <a href="#">Switch to Tech! →</a>
+                </div>
+                <div class="service-card">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Business Central Support" width=300px height=250px>
+                    <h3>Business Central Support</h3>
+                    <p>Improve the existing processes and eliminate all future issues with reliable support.</p>
+                    <a href="#">Revive Business! →</a>
+                </div>
+            </section>
+
+            <section class="business-preference">
+                <h2>Why Are Businesses Preferring Dynamics Square?</h2>
+                <p>Companies choose us as a Dynamics 365 support partner due to reliable service, trust, competitive
+                    pricing, etc. Here are a few points that make us favorites:</p>
+            </section>
+
+            <div class="container">
+                <div class="box gray-box">
+                    <h3><a href="#" class="link">Tailored Solutions, Built for You</a></h3>
+                    <p>We tailor Business Central with our expert team to fulfill your unique business requirements,
+                        exceeding customer expectations and meeting market demands.</p>
+                </div>
+                <div class="box blue-box">
+                    <h3>Team of Certified Dynamics 365 Experts</h3>
+                    <p><a class="link1">We are a team of over <b>135+</b> Microsoft-certified Dynamics 365 consultants.
+                            At Dynamics Square, the best industry minds are on your side to tackle any challenge and
+                            craft growth-oriented strategies.</a></p>
+                </div>
+                <div class="box blue-box">
+                    <h3>Adequate Resources Available</h3>
+                    <p><a class="link1">We have adequate resources and infrastructure to empower businesses of all
+                            sizes. With our robust Dynamics 365 Business Central support services, you can match your
+                            ambition to scale.</a></p>
+                </div>
+                <div class="box gray-box">
+                    <h3><a href="#" class="link">Hands-On Support</a></h3>
+                    <p>We offer on-site support for complex problems or interruptions to ensure your company gets back
+                        on track quickly and affordably.</p>
+                </div>
+            </div>
+        </header2>
+        <h1>Move to Business Central and Drive Digitalization</h1>
+        <p>Moving to Microsoft Business Central can open up the doors of limitless opportunities and push your business
+            towards sustainable growth.</p>
+
+        <section class="migration-section">
+            <div class="card-text light-blue">
+                <h2>Dynamics NAV to BC Upgrade</h2>
+                <p>Struggling with data silos, downtime, and system complexities? Go for a Dynamics NAV to BC upgrade to
+                    simplify processes, avail AI-enabled automation, and limitless scalability.</p>
+                <button class="red-button" id="openFormBtn">Find Out More</button>
+                <div id="formContainer" class="hidden">
+                    <div class="form-box">
+                        <h2>Request Callback</h2>
+                        <h3>Please complete the form <br>given below</h3>
+                        <form>
+                            <input type="text" placeholder="Name *" required>
+                            <input type="email" placeholder="Email *" required>
+                            <input type="tel" placeholder="Phone *" required>
+                            <textarea placeholder="How Can We Help You?" required></textarea>
+
+                            <button type="submit">Submit</button>
+                            <button type="button" id="closeFormBtn">Close</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-text white">
+                <h2>Dynamics GP to BC Migration</h2>
+                <p>Dealing with limited support and customization intricacies? Opt for Dynamics GP to BC migration to
+                    eliminate complexities, centralize data, and customize your system as per requirements.</p>
+                <button class="red-button" id="openFormBtn">Find Out More</button>
+                <div id="formContainer" class="hidden">
+                    <div class="form-box">
+                        <h2>Request Callback</h2>
+                        <h3>Please complete the form <br>given below</h3>
+                        <form>
+                            <input type="text" placeholder="Name *" required>
+                            <input type="email" placeholder="Email *" required>
+                            <input type="tel" placeholder="Phone *" required>
+                            <textarea placeholder="How Can We Help You?" required></textarea>
+
+                            <button type="submit">Submit</button>
+                            <button type="button" id="closeFormBtn">Close</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container5">
+            <div class="pricing-header">Dynamics 365 Business Central Pricing:<br>Find the Best Plan</div>
+            <div class="pricing-subtext">Take a look at Dynamics 365 Business Central Pricing and choose the perfect
+                plan among Team Member, Essential, and Premium Licensing options.</div>
+
+            <div class="pricing-cards">
+                <div class="card5">
+                    <div class="card5-header">Dynamics 365 Business Central Essentials</div>
+                    <div class="price">$95(CAD)</div>
+                    <p>per user/month</p>
+                    <ul class="features5">
+                        <li>&#10003; Financial Management</li>
+                        <li>&#10003; Inventory Management</li>
+                        <li>&#10003; Order Management</li>
+                        <li>&#10003; Purchase Order Management</li>
+                        <li>&#10003; Project Management</li>
+                        <li>&#10003; Additional Management</li>
+                    </ul>
+                </div>
+
+                <div class="card5">
+                    <div class="card5-header">Dynamics 365 Business Central Premium</div>
+                    <div class="price">$135.70(CAD)</div>
+                    <p>per user/month</p>
+                    <ul class="features5">
+                        <li>&#10003; Financial Management</li>
+                        <li>&#10003; Inventory Management</li>
+                        <li>&#10003; Sales Order Management</li>
+                        <li>&#10003; Purchase Order Management</li>
+                        <li>&#10003; Project Management</li>
+                        <li>&#10003; Additional Capabilities</li>
+                        <li>&#10003; Service Management</li>
+                        <li>&#10003; Manufacturing</li>
+                        <li>&#10003; Additional Capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="card5">
+                    <div class="card5-header">Dynamics 365 Business Central Team Members</div>
+                    <div class="price">$10.90(CAD)</div>
+                    <p>per user/month</p>
+                    <ul class="features5">
+                        <li>&#10003; Read and Approve</li>
+                        <li>&#10003; Employee Self Serve</li>
+                        <li>&#10003; Run All Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="red-button2" id="openFormBtn">Get Started Now</button>
+        <div id="formContainer" class="hidden">
+            <div class="form-box">
+                <h2>Request Callback</h2>
+                <h3>Please complete the form <br>given below</h3>
+                <form>
+                    <input type="text" placeholder="Name *" required>
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Phone *" required>
+                    <textarea placeholder="How Can We Help You?" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" id="closeFormBtn">Close</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container7">
+        <h1 class="faq-header">Got any questions About <br>Dynamics 365 Business Central</h1>
+        <p class="faq-subheader">Click through to our FAQ for the best answers!</p>
+
+        <div class="faq">
+            <div class="faq-item">
+
+                <button class="dropdown-btn">Why should small businesses use Microsoft Dynamics Business Central?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>D365 Business Central is one of the best cloud-based ERP available today.</p>
+                    <p>Here's why you should implement Microsoft Business Central:</p>
+                    <ul>
+                        <li>Simple and flexible to use.</li>
+                        <li>Ability to manage end-to-end process flows, from finance and supply chain to warehousing,
+                            sales, reporting & analytics, HR and payrolls.
+                        </li>
+                        <li>Integration with other online Microsoft services, business and productivity apps for
+                            increased productivity and better performance.</li>
+                        <li>Available in <b>130+</b> countries and regions, and in multiple languages and currency
+                            modes.</li>
+                        <li>Business Central is now powered by <b>Dynamics 365 Copilot</b> (Chat GPT4-based, AI-powered
+                            language tool) to help users start leveraging its capabilities for <br>more connected and
+                            collaborated experiences.</li>
+                    </ul>
+                </div>
+
+
+
+
+                <!-- <div class="faq-title">Why should small businesses use Microsoft Dynamics Business Central? </div>                 -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">How Business Central and Dynamics NAV are related?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Microsoft Dynamics 365 Business Central is the upgraded version of Dynamics NAV (also known as
+                        Navision). The difference lies in advanced features and navigations <br>in Business Central than
+                        in NAV. Microsoft Dynamics Business Central is designed to help businesses of today and tomorrow
+                        across various industries.</p>
+                    <p><b>Important: </b>Existing Dynamics NAV users can get support services but not the mainstream
+                        support from Microsoft.</p>
+                    <p>We, at Dynamics Square, offer reliable, cost-efficient NAV and <b>Business Central Support
+                            Services.</b> Get in touch for Business Central implementation to discuss your business
+                        problems in 1:1 meet-ups.</p>
+                </div>
+                <!-- <div class="faq-title">How Business Central and Dynamics NAV are related? </div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">What is the ROI of Dynamics 365 Business Central Implementation?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Implementing Dynamics 365 Business Central is expected to yield a Return on Investment (ROI) of
+                        <b>162%</b> over three years. The benefits of using Microsoft Dynamics Business Central are
+                        expected to outweigh the costs of implementing and maintaining the software.
+                    </p>
+                    <p>Plus, it can lead to a <b>10%</b> reduction in finance and operations hiring needs, which could
+                        translate to cost savings for the organization. Download the study by Gartner to explore the
+                        whole report.</p>
+                    <p>Get in touch with your <b>Business Central Partner</b> based in Canada like <b>Dynamics
+                            Square</b> for effortless, successful Business Central ERP implementation.</p>
+                </div>
+                <!-- <div class="faq-title">What is the ROI of Dynamics 365 Business Central Implementation? </div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">How to upgrade your NAV to Dynamics 365 Business Central?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>If you are ready to upgrade your legacy systems like NAV to a cloud-based intelligent business
+                        application - Dynamics 365 Business Central, we're always a call away. <br>Our team of
+                        <b>Dynamics 365 experts</b> and proficient consultants in Vancouver can help implement a highly
+                        configured solution for your business and fulfilling all your<br> customized business needs.
+                    </p>
+                    <p>For more details or to avail our<b> free system health check,</b> get in touch with us today.</p>
+                </div>
+                <!-- <div class="faq-title">How to upgrade your NAV to Dynamics 365 Business Central? </div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">Who can use Dynamics 365 Business Central Support?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Small and medium-sized businesses (SMBs) can use Business Central. This can help SMBs cater to
+                        companies across industries: e-Commerce, food & beverages, Manufacturing & Distribution,
+                        Healthcare and Professional Services to Non-Profit hubs.</p>
+                    <p>Curious to know how Business Central can get implemented for your growing business? We're your
+                        best Business Central Implementation partners for manufacturing <br>and service hubs across
+                        Canada; Vancouver, Toronto, Montreal, Quebec City, and more. <b>Contact us</b> today!</p>
+                </div>
+                <!-- <div class="faq-title">Who can use Dynamics 365 Business Central Support?</div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">What is the Dynamics 365 Business Central implementation cost?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Business Central is a cloud-based ERP system. It takes about <b>6</b> to <b>8</b> months for its
+                        implementation. This is why Dynamics 365 Business Central Implementation cost varies. Thus,
+                        pricing may vary depending on your requirements and the complexity of your business process
+                        flows. Below are the standard plans available for your business:</p>
+                    <p><b>Essential - </b>Starts at CAD <b>89.60</b> per user/month</p>
+                    <p><b>Premium - </b>From CAD <b>128</b> per user/month</p>
+                    <p><b>Team Member - </b>It's available at CAD <b>10.20</b> per user/month</p>
+                    <p>Still not sure which business central implementation cost plan would best suit your business,
+                        call our experts based in Vancouver, Canada. We're are always eager to extend help. <b>Connect
+                            now!</b></p>
+                </div>
+
+                <!-- <div class="faq-title">What is the Dynamics 365 Business Central implementation cost?</div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">How to get quick support for Dynamics 365 Business Central?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Reach out to your canadian Business Central partner for quick support. If your current partner is
+                        not listening to your problems, contact Dynamics Square. We have a dedicated support system and
+                        an expert team you provide timely, efficient, and flexible <b>Dynamics 365 Support</b> to our
+                        clients.</p>
+                    <p><b>Get in touch</b> with us now to discover the power of Business Central Online ERP</p>
+                </div>
+                <!-- <div class="faq-title">How to get quick support for Dynamics 365 Business Central?</div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">Can I integrate Power BI with Dynamics 365 Business Central?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Microsoft Dynamics 365 Business Central is an all-in-one solution, which is flexible in all
+                        business management aspects. Data analytics and data visualization software<br> like
+                        <b>Microsoft Power BI</b> are already included in Business Central.
+                    </p>
+                    <p>However, if you want to add the functionality of any other Microsoft Business Application or
+                        third-party service like Salesforce, you can do so.</p>
+                    <p><b>Contact</b> your <b>Business Central Partner</b> in Canada to help you get started.</p>
+                </div>
+                <!-- <div class="faq-title">Can I integrate Power BI with Dynamics 365 Business Central?</div> -->
+            </div>
+            <div class="faq-item">
+                <button class="dropdown-btn">What is the difference between Dynamics 365 Business Central and F&O?
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <p>Business Central is designed and developed for small and mid-market sized companies and has basic
+                        funcitonalities. While F&O or <b>Dynamics 365 Finance and Operations</b> (now available in two
+                        separate modules as <b>Dynamics 365 Finance</b> and Supply Chain Management) caters to large
+                        enterprises that have complex<br> operations to manage.</p>
+                    <p>For implementation of <b>Dynamics 365 Supply Chain Management,</b> you can <b>contact us</b> and
+                        share your requirements to get a quote.</p>
+                </div>
+                <!-- <div class="faq-title">What is the difference between Dynamics 365 Business Central and F&O?</div> -->
+            </div>
+        </div>
+    </div>
+
+    <h2 class="faq-header3">Book A Free Consultation</h2>
+    <p class="faq-subheader3">See How Dynamics Square Can Help Transform Your Business With Microsoft Business
+        Applications.</p>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info"><br><br>
+                <img src="https://www.dynamicssquare.com.au/includes/images/Logo-DS-new-logo-02.webp"
+                    alt="Dynamics Square">
+                <br<br><br>
+                    <p>+91 66515 11115</p>
+                    <p> budeg@dynamicssquare.com</p>
+                    <p> vdywv,l74894,lcjei,ccwwss, Faridabad</p>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <a href="#">Website Designing</a><br>
+                    <a href="#">Digital Marketing</a><br>
+                    <a href="#">E-commerce SEO</a><br>
+                    <a href="#">Graphic Design</a><br>
+                    <a href="#">Frontend Development</a><br>
+                    <a href="#">Backend Development</a><br>
+                    <a href="#">Mobile App Development</a>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Blogs</a><br>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Case Studies</a><br>
+                    <a href="#">Portfolio</a><br>
+                    <a href="#">Areas We Serve</a>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Let's Discuss Now</h3>
+                <form>
+                    <input type="text" placeholder="Name *" required>
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Phone *" required>
+                    <textarea placeholder="Please describe your requirements" required></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund & Cancellation Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            document.querySelector(".navbar1").classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+
+
+    <!--         <section class="consultation">
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <input type="text" placeholder="Company Name" required>
+                <div class="phone-input">
+                    <span>+91</span>
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <textarea placeholder="How Can We Help You?" rows="4" required></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" required>  <label>I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>ONTARIO</h3>
+                <p>800 Steeles Ave. W. #B10155 Thornhill, ON. L4J 7L2</p>
+                <p>+1 289 807 0740</p>
+                <p>info@dynamicssquare.ca</p>
+            </div>
+            <div>
+                <h3>BRITISH COLUMBIA</h3>
+                <p>398-2416 Main St. Vancouver BC V5T 3E2</p>
+                <p>+1 778 381 5388</p>
+                <p>info@dynamicssquare.ca</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- background-image: none;
+    background-color: #fff;
+    color: #e80566; -->
+
+    <!-- <section class="consultation">
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <input type="text" placeholder="Company Name" required>
+                <div class="phone-input">
+                    <span>+91</span>
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section> -->
+
+
+</body>
+
+</html>
